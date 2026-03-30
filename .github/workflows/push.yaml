@@ -1,11 +1,6 @@
 name: go-CI/CD-pipeline
 
-on:
-# можно и просто on: push
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+on: push
   
 jobs:
   # тестирование
