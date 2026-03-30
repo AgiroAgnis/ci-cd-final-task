@@ -1,5 +1,8 @@
 FROM golang:1.25.3
 
+# не запускается без библиотек
+RUN apt-get update && apt-get install -y gcc libc-dev musl-dev
+
 WORKDIR /app
 
 COPY . .
